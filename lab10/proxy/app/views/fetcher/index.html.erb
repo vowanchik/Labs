@@ -1,0 +1,20 @@
+<%= form_with(url: "/count", method: "get", local: true) do %>
+  <%= label_tag(:arr, "Последовательность:") %>
+  <%= text_field_tag(:arr) %>
+  <br />
+  <%= radio_button_tag(:ext, "xml") %>
+<%= label_tag(:ext_xml, "XML") %>
+<%= radio_button_tag(:ext, "html") %>
+<%= label_tag(:ext_html, "HTML") %>
+<br />
+  <%= label_tag(:conversion, "Тип преобразования:") %>
+<%= label_tag(:conversion_server, "Серверный") %>
+<%= radio_button_tag(:conversion, "server") %>
+<%= label_tag(:conversion_client, "Клиентский") %>
+<%= radio_button_tag(:conversion, "client") %>
+<br />
+<%= label_tag(:converter, "Преобразователь XML (оставьте пустым, если по умолчанию):") %>
+<%= text_field_tag(:converter) %>
+<br />
+<%= submit_tag("Готово") %>
+<% end %>

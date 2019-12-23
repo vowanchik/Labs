@@ -1,0 +1,100 @@
+Started GET "/" for ::1 at 2019-12-23 11:24:10 +0300
+Processing by ContController#main as HTML
+  Rendering cont/main.html.erb within layouts/application
+  Rendered cont/main.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1956ms (Views: 1759.1ms)
+
+
+Started GET "/answer?utf8=%E2%9C%93&arr=1+2+3+4+5+2+3+4&commit=%D0%93%D0%BE%D1%82%D0%BE%D0%B2%D0%BE" for ::1 at 2019-12-23 11:24:22 +0300
+Processing by ContController#answer as HTML
+  Parameters: {"utf8"=>"✓", "arr"=>"1 2 3 4 5 2 3 4", "commit"=>"Готово"}
+Completed 200 OK in 27ms (Views: 24.8ms)
+
+
+Started GET "/" for ::1 at 2019-12-23 11:25:41 +0300
+Processing by ContController#main as HTML
+  Rendering cont/main.html.erb within layouts/application
+  Rendered cont/main.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 26.2ms)
+
+
+Started GET "/answer?arr=4%205%206%207%201%202%203" for 127.0.0.1 at 2019-12-23 11:26:00 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"4 5 6 7 1 2 3"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/answer?arr=4%205%206%207%201%202%203" for 127.0.0.1 at 2019-12-23 11:26:07 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"4 5 6 7 1 2 3"}
+Completed 200 OK in 3ms (Views: 0.5ms)
+
+
+Started GET "/answer?arr=4%205%206%207%201%202%203" for 127.0.0.1 at 2019-12-23 11:26:11 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"4 5 6 7 1 2 3"}
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started GET "/answer?arr=4%205%206%207%201%202%203" for 127.0.0.1 at 2019-12-23 11:26:16 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"4 5 6 7 1 2 3"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/answer?arr=4%205%206%207%201%202%203" for 127.0.0.1 at 2019-12-23 11:27:09 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"4 5 6 7 1 2 3"}
+Completed 200 OK in 3ms (Views: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-12-23 20:31:56 +0300
+Processing by ContController#main as HTML
+  Rendering cont/main.html.erb within layouts/application
+  Rendered cont/main.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1197ms (Views: 1003.3ms)
+
+
+Started GET "/answer?utf8=%E2%9C%93&arr=1+2+3+4+5+3+4+5&commit=%D0%93%D0%BE%D1%82%D0%BE%D0%B2%D0%BE" for ::1 at 2019-12-23 20:32:05 +0300
+Processing by ContController#answer as HTML
+  Parameters: {"utf8"=>"✓", "arr"=>"1 2 3 4 5 3 4 5", "commit"=>"Готово"}
+Completed 200 OK in 72ms (Views: 68.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-23 20:32:46 +0300
+Processing by ContController#main as HTML
+  Rendering cont/main.html.erb within layouts/application
+  Rendered cont/main.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 39ms (Views: 36.4ms)
+
+
+Started GET "/answer?arr=1%202%203%204%203%204" for 127.0.0.1 at 2019-12-23 20:34:14 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"1 2 3 4 3 4"}
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started GET "/answer?arr=1%202%203%204%203%204" for 127.0.0.1 at 2019-12-23 20:34:24 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"1 2 3 4 3 4"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/answer?arr=1%202%203%204%203%204" for 127.0.0.1 at 2019-12-23 20:34:32 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"1 2 3 4 3 4"}
+Completed 200 OK in 7ms (Views: 0.7ms)
+
+
+Started GET "/answer?arr=1%202%203%204%203%204" for 127.0.0.1 at 2019-12-23 20:35:05 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"1 2 3 4 3 4"}
+Completed 200 OK in 1ms (Views: 0.5ms)
+
+
+Started GET "/answer?arr=1%202%203%204%205%206%207%201%202%203" for 127.0.0.1 at 2019-12-23 20:41:11 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"1 2 3 4 5 6 7 1 2 3"}
+Completed 200 OK in 158ms (Views: 0.3ms)
+
+

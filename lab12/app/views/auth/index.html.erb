@@ -1,0 +1,11 @@
+<head>
+  <%= csrf_meta_tags %>
+</head>
+
+<%= form_with(url: '.', method: 'POST', local: true) do %>
+Username:  <%= text_field_tag(:username) %><br />
+Password:   <%= password_field_tag(:pwd) %><br />
+<%= submit_tag("Sign in") %><br />
+<% end %>
+<%= @msg %>
+<%= link_to 'sign up', '/users/new'  %>

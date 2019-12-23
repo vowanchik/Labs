@@ -1,0 +1,19 @@
+Started GET "/" for ::1 at 2019-12-23 11:19:55 +0300
+Processing by ContController#main as HTML
+  Rendering cont/main.html.erb within layouts/application
+  Rendered cont/main.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1597ms (Views: 829.0ms)
+
+
+Started GET "/answer?arr=1%202%203%204%203%204%205" for ::1 at 2019-12-23 11:20:19 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"1 2 3 4 3 4 5"}
+Completed 200 OK in 4ms (Views: 0.9ms)
+
+
+Started GET "/answer?arr=1%204%207%209%201%202" for ::1 at 2019-12-23 11:20:47 +0300
+Processing by ContController#answer as */*
+  Parameters: {"arr"=>"1 4 7 9 1 2"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+
+
