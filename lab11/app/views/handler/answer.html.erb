@@ -1,0 +1,11 @@
+<pre>
+  <table>
+  <% @output.each do |line| %>
+  <tr>
+    <% line.each do |cell| %>
+      <td><%= cell %></td>
+    <% end %>
+  </tr>
+  <% end %>
+  </table>
+</pre>
