@@ -6,10 +6,10 @@ class HandlerController < ApplicationController
     rec = Rec.find_by(seq: params[:arr])
     if rec.nil? then
         rec = Rec.new do |r|
-          r.result = params[:arr]
+          r.set params[:arr]
         end
         rec.save
     end
-    @output = JSON.parse(rec.res)
+    @output = rec.result
   end
 end

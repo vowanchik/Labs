@@ -3,7 +3,7 @@ class Rec < ApplicationRecord
   validates :seq, uniqueness: true
   validates :res, presence: true
 
-  def result=(arr)
+  def set(arr)
     self.seq = arr
     seq = arr
     arrSplitted = seq.split().map{|str| str.to_i}
@@ -13,9 +13,19 @@ class Rec < ApplicationRecord
     end
     max = sequences[lengths.index(lengths.max)]
 
-    self.res = [['Sequences', 'Max'], [sequences.map{|s| s.join(' ')}.join("\n"), max.join(' ')]].to_s
+    self.result = [['Sequences', 'Max'], [sequences.map{|s| s.join(' ')}.join("\n"), max.join(' ')]]
   end
 
+
+   def result = (obj)
+      self.res = obj.to_s
+   end
+
+   def result
+     JSON.parse(self.res)
+   end
+
+   
   private
   def seqs(arr)
     arrM = arr.unshift(arr[0]+1)
