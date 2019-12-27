@@ -1,56 +1,25 @@
 
-def stroki (str)
-	
-    i=0
-    fam1 = ""
-    puts "Введённые данные: #{str}"
-    fam = "@"
-    flag = false
-    puts "Новая последовательность: "
-    loop do
-    	j=0
-    	pr=0
-    	str1 = str[i]   
-       loop do
-	       	if pr == 2 then	
-	       		if flag == true
-	       	    	fam += str1[j]
-	       	    end
-	       		if fam[0] == "@" then
-	       		fam[0] = str1[j]
-	       		flag = true
-	       	    end
-	       	    
-	       	end
-	       	if str1[j] ==" " 
-	       	 	pr += 1
-	        end
-	    	j += 1
-	        break if j == str1.length-1
-       end
-       j=0
-       pr=0
-       fam += " "
-	   fam += str1[0]
-	   fam += "."
-	   loop do
-	   	 	if pr == 1
-	       		fam += str1[j]
-	       		fam += "."
-	       		break
-	       	end
-	       	if str1[j] ==" " 
-	       	 	pr += 1
-	        end
-	    	j += 1
-	        break if j == str1.length-1
-	   end
-	   fam1 += fam
-	   fam1 += "\n"
-	   fam.clear
-	   str1 = []
-        i += 1
-    	break if i == str.length
-    end
-    return fam1
+def stroki (arr)
+	answ = []
+arr.each {|str|
+	n = 0
+	pr = 0
+	first_name = ""
+	full_str = ""
+	patronymic = ""
+	last_name = ""
+    str.each_char { |char|
+	    first_name += char + '.' if n == 0
+	    if pr == 1 
+	    	patronymic += char + '.' 
+	    	pr += 1
+	    end
+	   last_name += char if pr == 3
+	    pr += 1 if char == ' '
+	    n += 1
+    }
+  full_str += last_name.chomp + ' ' + first_name + patronymic + "\n"
+  answ.push(full_str)
+}
+return answ
 end
