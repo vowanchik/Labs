@@ -1,18 +1,21 @@
-def format_in_first_way (arr)
-	arr_new = arr.map {|str|
-			last_name, first_name, middle_name = str.split
-			str = "#{first_name} #{middle_name} #{last_name}"
-	}
-	return arr_new
+# frozen_string_literal: true
+
+def format_in_first_way(arr)
+  arr_new = arr.map do |str|
+    last_name, first_name, middle_name = str.split
+    "#{first_name} #{middle_name} #{last_name}"
+  end
+  arr_new
 end
 
-def format_in_second_way (arr)
-	arr_new = arr.map {|str|
-		 last_name, first_name, middle_name = str.split
-		str = "#{last_name} #{first_name[0]}. #{middle_name[0]}."
-	}
-	return arr_new
+def format_in_second_way(arr)
+  arr_new = arr.map do |str|
+    last_name, first_name, middle_name = str.split
+    "#{last_name} #{first_name[0]}. #{middle_name[0]}."
+  end
+  arr_new
 end
-def format_end (arr)
-    return [ format_in_first_way(arr), format_in_second_way(arr)]
+
+def format_end(arr)
+  [format_in_first_way(arr), format_in_second_way(arr)]
 end

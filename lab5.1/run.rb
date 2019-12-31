@@ -1,7 +1,7 @@
-require_relative "func.rb"
+# frozen_string_literal: true
 
-puts "Введите х: "
-x = 0
+require_relative 'func.rb'
+
+puts 'Введите х: '
 x = gets.to_i
-
 puts "y= #{calc(x)}"
